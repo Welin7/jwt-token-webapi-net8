@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 namespace Application.DTOs;
 
-public class RegisterUerDTO
+public class RegisterUserDTO
 {
     [Required]
     public string Name { get; set; } = string.Empty;

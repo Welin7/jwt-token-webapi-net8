@@ -4,6 +4,6 @@ namespace Application.Contracts;
 
 public interface IUser
 {
-    Task<RegistrationResponse> RegisterUserAsync(RegisterUerDTO registerUerDTO);
+    Task<RegistrationResponse> RegisterUserAsync(RegisterUserDTO registerUerDTO);
     Task<LoginResponse> LoginUserAsync(LoginDTO loginDTO);
 }

@@ -23,7 +23,7 @@ public class UserController : ControllerBase
     }
 
     [HttpPost("register")]
-    public async Task<ActionResult<LoginResponse>> RegisterUser(RegisterUerDTO registerUerDTO)
+    public async Task<ActionResult<LoginResponse>> RegisterUser(RegisterUserDTO registerUerDTO)
     {
         var result = await _user.RegisterUserAsync(registerUerDTO);
         return Ok(result);

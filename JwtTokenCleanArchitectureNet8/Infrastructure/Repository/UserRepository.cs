@@ -58,7 +58,7 @@ public class UserRepository : IUser
     private async Task<ApplicationUser> FindUserByEmail(string email) =>
         await _applicationDbContext.Users.FirstOrDefaultAsync(x => x.Email == email);
 
-    public async Task<RegistrationResponse> RegisterUserAsync(RegisterUerDTO registerUserDTO)
+    public async Task<RegistrationResponse> RegisterUserAsync(RegisterUserDTO registerUserDTO)
     {
         var getUser = await FindUserByEmail(registerUserDTO.Email!);
         if (getUser != null) 
